@@ -65,8 +65,8 @@ def fMenu():
 		fContinuar()
 
 # - Conexão com o couchDB.
-user = 'admin' # input('Insira o nome de usuario: ')
-password = 'admin' # input("Insira a senha: ")
+user = input('Insira o nome de usuario: ')
+password = input("Insira a senha: ")
 conexao = couchdb.Server(f"http://{user}:{password}@localhost:5984/")
 
 # - Conexao com o banco de dados empresa.
